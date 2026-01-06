@@ -1,0 +1,26 @@
+{
+  "name": "jeans/sportspack",
+  "description": "A high-performance WordPress plugin for managing sports data hierarchies",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "php": ">=7.4"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.7",
+    "wp-coding-standards/wpcs": "^3.0",
+    "phpcompatibility/phpcompatibility-wp": "^2.1"
+  },
+  "scripts": {
+    "phpcs": "phpcs --standard=WordPress --extensions=php --ignore=*/vendor/*,*/node_modules/* .",
+    "phpcbf": "phpcbf --standard=WordPress --extensions=php --ignore=*/vendor/*,*/node_modules/* .",
+    "install-standards": [
+      "phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs,vendor/phpcompatibility/phpcompatibility-wp"
+    ]
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}

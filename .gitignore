@@ -1,0 +1,23 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Build artifacts
+/vendor/
+/node_modules/
+*.log
+
+# WordPress specific
+wp-config.php
+.htaccess
+
+# Temporary files
+/tmp/
+*.tmp
